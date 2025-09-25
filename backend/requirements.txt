@@ -18,3 +18,4 @@ django-cors-headers
 
 # Serve static files in production
 whitenoise
+djangorestframework
