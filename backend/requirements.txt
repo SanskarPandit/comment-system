@@ -1,0 +1,20 @@
+# Core framework
+django>=5.0,<6.0
+
+# WSGI server for production
+gunicorn
+
+# Environment variable loader
+python-dotenv
+
+# PostgreSQL driver
+psycopg2-binary
+
+# Database URL parser (for Render's DATABASE_URL)
+dj-database-url
+
+# Handle CORS between frontend & backend
+django-cors-headers
+
+# Serve static files in production
+whitenoise

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 -p 5000",
+    "dev": "next dev -H 0.0.0.0 -p 5003",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,5 +17,10 @@
     "next": "^15.5.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.2",
+    "@types/react": "19.1.13",
+    "typescript": "5.9.2"
   }
 }

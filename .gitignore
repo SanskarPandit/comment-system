@@ -1,0 +1,46 @@
+# ---- Python / Django ----
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Django specific
+/staticfiles/
+/media/
+
+# Virtual environment
+venv/
+.env
+.env.local
+.env.*.local
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# ---- Node / Next.js ----
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build output
+.next/
+out/
+dist/
+
+# Local env files
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ---- MacOS ----
+.DS_Store
+
+# ---- Render / Netlify ----
+# (They manage their own build artifacts)
