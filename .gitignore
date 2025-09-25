@@ -28,9 +28,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Next.js build output
-.next/
-out/
-dist/
+frontend/.next/
+frontend/out/
+frontend/dist/
 
 # Local env files
 frontend/.env
