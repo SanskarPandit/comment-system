@@ -1,0 +1,1 @@
+export const BACKEND_URL ='https://comment-system-ad5x.onrender.com'

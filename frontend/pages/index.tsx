@@ -3,6 +3,7 @@ import Head from "next/head";
 import axios from "axios";
 import CommentForm from "../components/CommentForm";
 import CommentList from "../components/CommentList";
+import { BACKEND_URL } from "../shared/constants";
 
 export default function Home() {
   const [comments, setComments] = useState([]);
@@ -16,7 +17,7 @@ export default function Home() {
   const fetchComments = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:8000/api/comments/");
+      const response = await axios.get(`${BACKEND_URL}/api/comments/`);
       setComments(response.data);
       setError("");
     } catch (error) {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { BACKEND_URL } from "../shared/constants";
 
 export default function CommentList({ comments, onCommentDeleted }) {
   const [deletingIds, setDeletingIds] = useState(new Set());
@@ -10,7 +11,7 @@ export default function CommentList({ comments, onCommentDeleted }) {
     setDeletingIds((prev) => new Set([...prev, commentId]));
 
     try {
-      await axios.delete(`http://localhost:8000/api/comments/${commentId}/`);
+      await axios.delete(`${BACKEND_URL}/api/comments/${commentId}/`);
       onCommentDeleted(commentId);
     } catch (error) {
       alert("Failed to delete comment. Please try again.");

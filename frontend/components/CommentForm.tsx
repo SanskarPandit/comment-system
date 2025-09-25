@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import axios from "axios";
+import { BACKEND_URL } from "../shared/constants";
 
 export default function CommentForm({ onCommentAdded }) {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export default function CommentForm({ onCommentAdded }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/comments/",
+        `${BACKEND_URL}/api/comments/`,
         formData
       );
       setFormData({ content: "", author_name: "", author_email: "" });
